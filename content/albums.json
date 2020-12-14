@@ -1,0 +1,98 @@
+[
+    {
+        "artist": "The Flaming Lips",
+        "title": "American Head",
+        "img": "The_Flaming_Lips_American_Head_Cover.png",
+        "theme": "theme-1",
+        "spotify": "https://open.spotify.com/embed/track/7q6R9K9JTzrhs5J3x9okjF",
+        "tracks": ["Will You Return / When You Come Down", "Mother Please Don't Be Sad"]
+    },
+    {
+        "artist": "Freddie Gibbs & The Alchemist",
+        "title": "Alfredo",
+        "img": "Alfredo_by_Freddie_Gibbs_&_The_Alchemist.jpg",
+        "theme": "theme-2",
+        "spotify": "https://open.spotify.com/embed/track/15NQ3x1f2GUhqs8oBXhTqp",
+        "tracks": ["Scottie Beam", "Something to Rap About"]
+    },
+    {
+        "artist": "Jeff Rosenstock",
+        "title": "NO DREAM",
+        "img": "NO_DREAM_cover.jpg",
+        "theme": "theme-3",
+        "spotify": "https://open.spotify.com/embed/track/2LyAiqr5M9P1HIHXO716oy",
+        "tracks": ["Scram!", "f a m e"]
+    },
+    {
+        "artist": "Haim",
+        "title": "Women in Music Pt. III",
+        "img": "Women_in_Music_Pt._III.png",
+        "theme": "theme-4",
+        "spotify": "https://open.spotify.com/embed/track/4PsSph7wHmHGhhKk5fWAZ4",
+        "tracks": ["Don't Wanna", "3 AM"]
+    },
+    {
+        "artist": "Lianne La Havas",
+        "title": "Lianne La Havas",
+        "img": "Lianne_La_Havas.png",
+        "theme": "theme-5",
+        "spotify": "https://open.spotify.com/embed/track/1xYk9EZpuwvuAvuLF4k9x3",
+        "tracks": ["Bittersweet", "Weird Fishes"]
+    },
+    {
+        "artist": "Run the Jewels",
+        "title": "RTJ4",
+        "img": "RTJ4.png",
+        "theme": "theme-6",
+        "spotify": "https://open.spotify.com/embed/track/2pVvB487ZwqdzTxEvEEors",
+        "tracks": ["walking in the snow", "JU$T"]
+    },
+    {
+        "artist": "Khruangbin",
+        "title": "Mordechai",
+        "img": "Mordechai_Cover.png",
+        "theme": "theme-7",
+        "spotify": "https://open.spotify.com/embed/track/4fMIe4htuvA8RoygYDFqO5",
+        "tracks": ["Time (You and I)", "If There is No Question"]
+    },
+    {
+        "artist": "Phoebe Bridgers",
+        "title": "Punisher",
+        "img": "Punisher_cover.png",
+        "theme": "theme-8",
+        "spotify": "https://open.spotify.com/embed/track/4BNew3AqFCvABdFsYMRiyB",
+        "tracks": ["Savior Complex", "Kyoto"]
+    },
+    {
+        "artist": "Protomartyr",
+        "title": "Ultimate Success Today",
+        "img": "Ultimate_Success_Today_cover.png",
+        "theme": "theme-9",
+        "spotify": "https://open.spotify.com/embed/track/6hVVhORwKxGgJ9PC2jaA2R",
+        "tracks": ["Processed By The Boys", "Michigan Hammers"]
+    },
+    {
+        "artist": "Tame Impala",
+        "title": "The Slow Rush",
+        "img": "The_Slow_Rush_cover.png",
+        "theme": "theme-10",
+        "spotify": "https://open.spotify.com/embed/track/0IuE6FnXPCdZ8NLuuvJRhb",
+        "tracks": ["On Track", "It Might Be Time"]
+    },
+    {
+        "artist": "Jessie Ware",
+        "title": "What's Your Pleasure?",
+        "img": "Whats_Your_Pleasure_cover.png",
+        "theme": "theme-11",
+        "spotify": "https://open.spotify.com/embed/track/2ZcwbSYqc8RfPGMMXTIdb0",
+        "tracks": ["What's Your Pleasure?", "In Your Eyes"]
+    },
+    {
+        "artist": "Caribou",
+        "title": "Suddenly",
+        "img": "Suddenly_cover.png",
+        "theme": "theme-12",
+        "spotify": "https://open.spotify.com/embed/track/6A10Rn20ulDup3uNuOohUF",
+        "tracks": ["Never Come Back", "Home"]
+    }
+]

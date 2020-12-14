@@ -1,0 +1,53 @@
+/*
+ * Add new themes to map for new albums
+ */
+$album-themes: (
+  theme-1: (
+    primary: rgba(110, 78, 250, 0.933),
+    text-color: $off-white,
+  ),
+  theme-2: (
+    primary: rgb(114, 79, 47),
+    text-color: $off-white,
+  ),
+  theme-3: (
+    primary: rgb(218, 61, 147),
+    text-color: $off-white,
+  ),
+  theme-4: (
+    primary: $dark-orange,
+    text-color: $off-white,
+  ),
+  theme-5: (
+    primary: rgb(96, 123, 134),
+    text-color: $off-white,
+  ),
+  theme-6: (
+    primary: rgb(48, 14, 71),
+    text-color: $off-white,
+  ),
+  theme-7: (
+    primary: rgb(12, 21, 27),
+    text-color: $off-white,
+  ),
+  theme-8: (
+    primary: rgb(19, 16, 63),
+    text-color: $off-white,
+  ),
+  theme-9: (
+    primary: rgb(10, 46, 114),
+    text-color: $off-white,
+  ),
+  theme-10: (
+    primary: rgb(109, 1, 1),
+    text-color: $off-white,
+  ),
+  theme-11: (
+    primary: rgb(87, 73, 28),
+    text-color: $off-white,
+  ),
+  theme-12: (
+    primary: rgb(0, 58, 167),
+    text-color: $off-white,
+  ),
+);

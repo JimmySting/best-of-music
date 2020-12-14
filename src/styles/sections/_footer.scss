@@ -1,0 +1,57 @@
+.footer {
+  background-color: $off-white;
+  color: $dark-green-text;
+  padding: 2rem 0;
+
+  @include respond(phone) {
+    border: 0px;
+  }
+
+  & hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    width: 100%;
+    border-top: 2px solid $dark-orange;
+  }
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  font-size: 0.9rem;
+
+  a {
+    color: rgb(99, 1, 99);
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  i {
+    font-size: 2.2rem;
+    color: $dark-green-text;
+    cursor: pointer;
+    padding-left: 0.75rem;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.back-to-top i {
+  display: flex;
+  justify-content: center;
+  color: $dark-orange;
+  margin: 1rem 0 $default-font-size;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}

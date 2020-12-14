@@ -1,0 +1,5 @@
+@import '../themes/albums';
+
+@each $theme-name, $theme-map in $album-themes {
+  @include album-theme($theme-name, $theme-map);
+}

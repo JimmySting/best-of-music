@@ -1,0 +1,39 @@
+#archiveLink {
+  margin: 2rem;
+}
+
+#archive {
+  color: $dark-green-text;
+
+  .archive-toggle {
+    display: flex;
+    i {
+      margin-left: 0.5rem;
+      margin-top: 0.15rem;
+    }
+  }
+
+  .archive-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    a {
+      color: $dark-green-text;
+      margin: 0.5rem;
+      width: 100%;
+    }
+  }
+
+  .collapse {
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+    transition: height 0.5s ease;
+  }
+
+  .collapsing {
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+    transition: height 0.5s ease;
+  }
+}

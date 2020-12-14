@@ -1,0 +1,179 @@
+// MEDIA QUERY MANAGER
+/*
+
+0 - 600px:          Phone
+600px - 900px       Table Portrait
+900px - 1200px      Table Landscape
+[1200px - 1800px]   Desktop Normal Styles
+1800px +            Big Desktop
+
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+  // Phone-xs
+  @if $breakpoint == phone-xs {
+    @media (max-width: 20em) {
+      @content;
+    } //0 - 320px
+  }
+  // Phone
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    } //0 - 600px
+  }
+  // Table Portrait
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  // Table Landscape
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  // Big Desktop
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    } //1800px +
+  }
+}
+
+// Border White Mixin
+@mixin section-borders {
+  border: 1.5rem solid #fff;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+@mixin album-theme($theme-name, $theme-map) {
+  ##{$theme-name} {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 0px;
+    background: linear-gradient(map-get($theme-map, primary), $off-white);
+    color: map-get($theme-map, text-color);
+    font-weight: 400;
+    padding: 0rem 5.6rem;
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    @include respond(phone) {
+      padding: 0rem $default-font-size;
+    }
+
+    .album-artist {
+      font-size: 4rem;
+      font-weight: 700;
+      text-align: left;
+      margin-top: 1rem;
+
+      @include respond(tab-land) {
+        font-size: 3.2rem;
+      }
+      @include respond(tab-port) {
+        font-size: 3.2rem;
+        text-align: left;
+      }
+      @include respond(phone) {
+        font-size: 2.5rem;
+        line-height: 1;
+      }
+      @include respond(phone-xs) {
+        font-size: 2.8rem;
+      }
+    }
+
+    .album-title {
+      font-size: 2rem;
+      text-align: left;
+      margin-bottom: 2rem;
+      color: lighten(map-get($theme-map, text-color), 10%);
+
+      @include respond(tab-land) {
+        font-size: 2rem;
+      }
+      @include respond(tab-port) {
+        font-size: 1.75rem;
+        text-align: left;
+      }
+      @include respond(phone) {
+        font-size: 1.75rem;
+        line-height: 1.5;
+      }
+      @include respond(phone-xs) {
+        font-size: 2rem;
+      }
+    }
+
+    .album-artwork {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      // box-shadow: 10px 10px pink;
+
+      & img {
+        box-shadow: 10px 10px pink;
+      }
+
+      @include respond(phone) {
+        justify-content: center;
+      }
+
+      @include respond(tab-port) {
+        justify-content: center;
+      }
+    }
+
+    .fav-tracks {
+      @include respond(tab-port) {
+        margin-top: 2rem;
+      }
+      @include respond(phone) {
+        margin-top: 2rem;
+      }
+    }
+
+    .next-btn {
+      display: flex;
+      justify-content: center;
+
+      & a {
+        font-size: 2.4rem;
+
+        @include respond(phone) {
+          font-size: 2rem;
+
+          &:before {
+            transform: translateY(4px);
+          }
+
+          &:after {
+            transform: translateY(-4px);
+          }
+        }
+      }
+
+      & i {
+        color: map-get($theme-map, primary);
+        margin: 1rem 0 $default-font-size;
+        transition: all 0.3s ease-in;
+        cursor: pointer;
+
+        &:hover {
+          transform: translateY(4px);
+        }
+      }
+    }
+  }
+}
