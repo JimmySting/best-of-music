@@ -5,7 +5,7 @@ import Album from './Album/Album'
 import Footer from './Footer/Footer'
 import JSONData from '../../content/albums.json'
 
-const App = ({ title, description, author, github }) => {
+const App = ({ title, description, author, github, playlist }) => {
   return (
     <>
       <Intro
@@ -22,7 +22,7 @@ const App = ({ title, description, author, github }) => {
           ></Album>
         )
       })}
-      <Footer author={author} github={github} />
+      <Footer author={author} playlist={playlist} github={github} />
     </>
   )
 }
@@ -32,6 +32,7 @@ App.propTypes = {
   description: PropTypes.string,
   author: PropTypes.string,
   github: PropTypes.string,
+  playlist: PropTypes.string,
 }
 
 export default App

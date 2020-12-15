@@ -7,7 +7,7 @@ import '../styles/main.scss';
 
 export default ({ data }) => {
 
-  const { title, description, author, github } = data.site.siteMetadata
+  const { title, description, author, github, playlist } = data.site.siteMetadata
 
   return (
     <>
@@ -22,6 +22,7 @@ export default ({ data }) => {
         description={description}
         author={author} 
         github={github}
+        playlist={playlist}
       />
     </>
   );
@@ -35,6 +36,7 @@ export const query = graphql`
         description
         author
         github
+        playlist
       }
     }
   }

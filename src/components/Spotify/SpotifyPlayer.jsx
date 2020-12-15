@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 // Size presets, defined by Spotify
 const sizePresets = {
@@ -12,29 +12,28 @@ const sizePresets = {
   },
 }
 
-class SpotifyPlayer extends Component {
-  render() {
-    const { uri } = this.props
-    let { size } = this.props
-
-    if (typeof size === `string`) {
-      size = sizePresets[size]
-    }
-
-    return (
-      <div className="spotify-player">
-        <iframe
-          title="Spotify"
-          src={uri}
-          width="300"
-          height="80"
-          frameBorder="0"
-          allowtransparency="true"
-          allow="encrypted-media"
-        ></iframe>
-      </div>
-    )
+const SpotifyPlayer = ({ uri, size }) => {
+  // Default to compact if not provided
+  let width = sizePresets['compact'].width
+  let height = sizePresets['compact'].height
+  if (typeof size === `string`) {
+    width = sizePresets[size].width
+    height = sizePresets[size].height
   }
+
+  return (
+    <div className="spotify-player">
+      <iframe
+        title="Spotify"
+        src={uri}
+        width={width}
+        height={height}
+        frameBorder="0"
+        allowtransparency="true"
+        allow="encrypted-media"
+      ></iframe>
+    </div>
+  )
 }
 
 export default SpotifyPlayer

@@ -3,7 +3,8 @@ module.exports = {
     title: `Best of 2020`,
     description: `Annual year-end music highlights`,
     author: `James Fitzpatrick`,
-    github: `https://github.com/jimmysting`
+    github: `https://github.com/JimmySting/best-of-music`,
+    playlist: `https://open.spotify.com/embed/playlist/4yVv6CjVqDCdVjRswkbsTA`
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -27,11 +28,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Simplefolio`,
-        short_name: `Simplefolio`,
+        name: `Best of Music 2020`,
+        short_name: `Best Of`,
         start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#02aab0`,
+        background_color: `#fcfbf9`,
+        theme_color: `#d19003`,
         display: `standalone`,
         icon: 'static/images/favicon.png',
       },

@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "best-of-music-blog-2020",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Showcase of annual year-end music favorites",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -38,9 +38,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/JimmySting/best-of-music"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/JimmySting/best-of-music/issues"
   }
 }

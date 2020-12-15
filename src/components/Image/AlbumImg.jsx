@@ -7,7 +7,12 @@ const AlbumImg = ({ filename, alt }) => (
   <StaticQuery
     query={graphql`
       query {
-        allFile(filter: { sourceInstanceName: { eq: "images" } }) {
+        allFile(
+          filter: {
+            sourceInstanceName: { eq: "images" }
+            name: { ne: "favicon" }
+          }
+        ) {
           edges {
             node {
               relativePath
